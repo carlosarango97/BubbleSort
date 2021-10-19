@@ -1,9 +1,13 @@
 def bubble_sort(lista):
-    #implement code
+    n = len(lista)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if lista[j] > lista[j+1] :
+                lista[j], lista[j+1] = lista[j+1], lista[j]
 
 lista_ejemplo = [58, 52, 5, 12, 69, 87, 12]
 
-bubbleSort(lista_ejemplo)
+bubble_sort(lista_ejemplo)
 
 print ("Lista ordenada:")
 for i in lista_ejemplo:
